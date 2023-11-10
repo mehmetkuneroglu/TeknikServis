@@ -23,8 +23,8 @@ namespace TeknikServis.iletisim
             try
             {
                 MailMessage mail = new MailMessage();
-                string frommail = "mehmetkuneroglu@gmail.com";
-                string password = "rkkv opzz ueos shyi";
+                string frommail = "your email";
+                string password = "your email app password";
                 string alici = textEdit1.Text;
                 string konu = textEdit2.Text;
                 string icerik = richTextBox1.Text;
