@@ -22,7 +22,7 @@ namespace TeknikServis.Formlar
         {
 
         }
-        DbTeknikServisEntities1 db = new DbTeknikServisEntities1();
+        DbTeknikServisEntities db = new DbTeknikServisEntities();
         void Listele()
         {
             gridControl1.DataSource = (from x in db.TBLURUNKABUL
@@ -52,7 +52,7 @@ namespace TeknikServis.Formlar
             labelControl13.Text = db.TBLURUNKABUL.Count(x => x.DURUMDETAY =="İptal edildi").ToString();
 
 
-            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-15IJ3SF\SQLEXPRESS;Initial Catalog=DbTeknikServis;Integrated Security=True");
+            SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=DbTeknikServis;Integrated Security=True");
             baglanti.Open();
             SqlCommand komut = new SqlCommand("Select durumdetay,COUNT(*) from TBLURUNkabul group by durumdetay", baglanti);
             SqlDataReader dr = komut.ExecuteReader();

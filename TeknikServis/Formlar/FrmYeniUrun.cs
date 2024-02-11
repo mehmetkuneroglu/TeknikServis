@@ -16,7 +16,7 @@ namespace TeknikServis.Formlar
         {
             InitializeComponent();
         }
-        DbTeknikServisEntities1 db = new DbTeknikServisEntities1();
+        DbTeknikServisEntities db = new DbTeknikServisEntities();
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 

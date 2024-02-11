@@ -39,7 +39,7 @@ namespace TeknikServis.Formlar
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
-            DbTeknikServisEntities1 db = new DbTeknikServisEntities1();
+            DbTeknikServisEntities db = new DbTeknikServisEntities();
             TBLURUNTAKIP t = new TBLURUNTAKIP();
             t.ACIKLAMA = richTextBox1.Text;
             t.SERINO = txtSeriNo.Text;

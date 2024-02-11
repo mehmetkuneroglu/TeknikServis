@@ -299,10 +299,10 @@
     <Compile Include="Raporlar\XtraReport1.Designer.cs">
       <DependentUpon>XtraReport1.cs</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagrams.cs">
+    <Compile Include="TBLADMIN.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="TBLADMIN.cs">
+    <Compile Include="TBLARACLAR.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="TBLARIZADETAY.cs">

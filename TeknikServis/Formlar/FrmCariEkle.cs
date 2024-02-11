@@ -21,7 +21,7 @@ namespace TeknikServis.Formlar
         {
             this.Close();
         }
-        DbTeknikServisEntities1 db = new DbTeknikServisEntities1();
+        DbTeknikServisEntities db = new DbTeknikServisEntities();
         private void btnKaydet_Click(object sender, EventArgs e)
         {
             TBLCARI t = new TBLCARI();

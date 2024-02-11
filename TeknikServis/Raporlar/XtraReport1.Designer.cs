@@ -68,7 +68,7 @@ namespace TeknikServis.Raporlar
             // 
             efConnectionParameters1.ConnectionString = "";
             efConnectionParameters1.ConnectionStringName = "DbTeknikServisEntities";
-            efConnectionParameters1.Source = typeof(TeknikServis.DbTeknikServisEntities1);
+            efConnectionParameters1.Source = typeof(TeknikServis.DbTeknikServisEntities);
             this.efDataSource1.ConnectionParameters = efConnectionParameters1;
             this.efDataSource1.Name = "efDataSource1";
             // 

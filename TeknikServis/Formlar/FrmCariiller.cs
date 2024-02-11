@@ -16,8 +16,8 @@ namespace TeknikServis.Formlar
         {
             InitializeComponent();
         }
-        DbTeknikServisEntities1 db = new DbTeknikServisEntities1();
-        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-15IJ3SF\\SQLEXPRESS;Initial Catalog=DbTeknikServis;Integrated Security=True");
+        DbTeknikServisEntities db = new DbTeknikServisEntities();
+        SqlConnection baglanti = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=DbTeknikServis;Integrated Security=True");
         private void FrmCariiller_Load(object sender, EventArgs e)
         {
             //chartControl1.Series["Series 1"].Points.AddPoint("Ankara",2);

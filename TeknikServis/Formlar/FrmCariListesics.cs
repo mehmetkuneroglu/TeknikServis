@@ -17,7 +17,7 @@ namespace TeknikServis.Formlar
         {
             InitializeComponent();
         }
-        DbTeknikServisEntities1 db = new DbTeknikServisEntities1();
+        DbTeknikServisEntities db = new DbTeknikServisEntities();
         void Listele()
         {
 

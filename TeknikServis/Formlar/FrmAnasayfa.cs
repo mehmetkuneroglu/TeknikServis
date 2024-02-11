@@ -16,7 +16,7 @@ namespace TeknikServis.Formlar
         {
             InitializeComponent();
         }
-        DbTeknikServisEntities1 db = new DbTeknikServisEntities1();
+        DbTeknikServisEntities db = new DbTeknikServisEntities();
         void Listele()
         {
             gridControl1.DataSource = (from x in db.TBLURUN

@@ -16,7 +16,7 @@ namespace TeknikServis.Formlar
         {
             InitializeComponent();
         }
-        DbTeknikServisEntities1 db = new DbTeknikServisEntities1();
+        DbTeknikServisEntities db = new DbTeknikServisEntities();
         void Listele()
         {
             gridControl1.DataSource = db.TBLNOTLARIM.Where(x => x.DURUM == false).ToList();

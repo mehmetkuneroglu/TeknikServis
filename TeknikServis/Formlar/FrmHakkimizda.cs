@@ -16,7 +16,7 @@ namespace TeknikServis.Formlar
         {
             InitializeComponent();
         }
-        DbTeknikServisEntities1 db = new DbTeknikServisEntities1();
+        DbTeknikServisEntities db = new DbTeknikServisEntities();
         private void FrmHakkimizda_Load(object sender, EventArgs e)
         {
             int sayac = db.TBLILETISIM.Count();

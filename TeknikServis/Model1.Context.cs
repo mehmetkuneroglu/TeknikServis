@@ -15,10 +15,10 @@ namespace TeknikServis
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class DbTeknikServisEntities1 : DbContext
+    public partial class DbTeknikServisEntities : DbContext
     {
-        public DbTeknikServisEntities1()
-            : base("name=DbTeknikServisEntities1")
+        public DbTeknikServisEntities()
+            : base("name=DbTeknikServisEntities")
         {
         }
     
@@ -27,8 +27,8 @@ namespace TeknikServis
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<TBLADMIN> TBLADMIN { get; set; }
+        public virtual DbSet<TBLARACLAR> TBLARACLAR { get; set; }
         public virtual DbSet<TBLARIZADETAY> TBLARIZADETAY { get; set; }
         public virtual DbSet<TBLCARI> TBLCARI { get; set; }
         public virtual DbSet<TBLDEPARTMAN> TBLDEPARTMAN { get; set; }

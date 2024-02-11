@@ -24,7 +24,7 @@ namespace TeknikServis.Formlar
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            DbTeknikServisEntities1 db = new DbTeknikServisEntities1();
+            DbTeknikServisEntities db = new DbTeknikServisEntities();
             TBLKATEGORI t = new TBLKATEGORI();
             t.AD = txtKategoriAd.Text;
             db.TBLKATEGORI.Add(t);

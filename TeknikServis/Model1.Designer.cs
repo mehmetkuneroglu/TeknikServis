@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\kuner\source\repos\TeknikServis\TeknikServis\Model1.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\Casper Masaüstü 10.02.2024 Yedek\TeknikServis\TeknikServis\Model1.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

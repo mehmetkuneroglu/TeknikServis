@@ -19,7 +19,7 @@ namespace TeknikServis.Formlar
 
         private void FrmArizaliUrunDetayListesi_Load(object sender, EventArgs e)
         {
-            DbTeknikServisEntities1 db = new DbTeknikServisEntities1();
+            DbTeknikServisEntities db = new DbTeknikServisEntities();
             gridControl1.DataSource = (from x in db.TBLURUNTAKIP
                                        select new
                                        {

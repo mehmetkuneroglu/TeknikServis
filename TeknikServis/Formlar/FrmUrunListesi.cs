@@ -44,7 +44,7 @@ namespace TeknikServis.Formlar
             lookUpEdit1.Text= "Bir değer seçiniz";
 
         }
-        DbTeknikServisEntities1 db = new DbTeknikServisEntities1();
+        DbTeknikServisEntities db = new DbTeknikServisEntities();
         
         private void FrmUrunListesi_Load(object sender, EventArgs e)
         {

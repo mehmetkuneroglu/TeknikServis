@@ -17,7 +17,7 @@ namespace TeknikServis.Formlar
         {
             InitializeComponent();
         }
-        DbTeknikServisEntities1 db = new DbTeknikServisEntities1();
+        DbTeknikServisEntities db = new DbTeknikServisEntities();
         private void FrmMarka_Load(object sender, EventArgs e)
         {
             var degerler = db.TBLURUN.OrderBy(z => z.MARKA).GroupBy(x => x.MARKA).Select(y => new
@@ -40,7 +40,7 @@ namespace TeknikServis.Formlar
             //chartControl1.Series["Series 1"].Points.AddPoint("TOSHIBA", 2);
             //chartControl1.Series["Series 1"].Points.AddPoint("LENOVO", 1);
 
-            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-15IJ3SF\SQLEXPRESS;Initial Catalog=DbTeknikServis;Integrated Security=True");
+            SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=DbTeknikServis;Integrated Security=True");
             baglanti.Open();
             SqlCommand komut = new SqlCommand("Select marka, count(*) from TBLURUN group by marka", baglanti);
             SqlDataReader dr = komut.ExecuteReader();
